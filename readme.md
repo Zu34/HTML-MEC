@@ -36,9 +36,11 @@ To sum up, both compilers and interpreters are used to convert high-level code i
 
 ## Server-Side
 
-. **Execution Location**: Code is processed on a web server, handling client requests and sending the appropriate responses.
-. **Technologies**: Commonly uses server-side languages such as Python, PHP, Ruby, and Node.js, along with databases like MySQL to manage application logic, data storage, and user authentication.
-. **Use Cases**: Examples include managing user logins, executing database operations, and delivering dynamic content based on user interactions or inputs.
+1. **Execution Location**: Code is processed on a web server, handling client requests and sending the appropriate responses.
+
+2. **Technologies**: Commonly uses server-side languages such as Python, PHP, Ruby, and Node.js, along with databases like MySQL to manage application logic, data storage, and user authentication.
+
+3. **Use Cases**: Examples include managing user logins, executing database operations, and delivering dynamic content based on user interactions or inputs.
 
 - **Performance**: Typically slower compared to client-side because it requires continuous communication between the client and the server.
 - **Security**: More secure as sensitive data and operations are managed on the server, away from the user, reducing the risk of exposure or tampering.

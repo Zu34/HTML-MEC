@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+       <div style="background-color:#d1ecf1 ;">
+            <h2>Sign Up</h2>
+            <form action="login.html" method="get">
+               <div>
+                 <label for="signup-e">Email</label>
+                <input type="email" id="signup-e" placeholder="Type your email" required>
+               </div>
+                <br>
+                <div>
+                <label for="signup-pass">Password</label>
+                <input type="password" id="signup-pass" placeholder="Enter your password" required>
+                </div>
+                <br>
+                <fieldset  style="width: 400px; height: 50px;">
+                    <legend>Gender</legend>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </fieldset>
+                    <br>
+                <label for="bio">Your BIO:</label>
+                <textarea id="bio" style="width: 30%; height: 100px;" placeholder="Write a summary about yourself" tabindex="-1"></textarea>
+
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+       </div>
+   
+
+</body>
+</html>

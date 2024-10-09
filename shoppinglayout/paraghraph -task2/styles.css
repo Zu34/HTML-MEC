@@ -1,0 +1,31 @@
+*{
+    margin: 10px;
+   
+}
+.bold-black {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.small-brown {
+    font-size: smaller;
+    color: rgb(217, 58, 58);
+}
+
+.blue {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    color: blue;
+}
+
+.bold-red {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+}
+
+.italic-brown {
+    font-size: 20px;
+    color:rgb(165, 73, 42);
+    font-style: italic;
+}

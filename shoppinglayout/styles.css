@@ -24,18 +24,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #a2a4a6; 
 }
 
-.navbar h1 {
+.titilepage a {
     font-size: 1.7rem; 
     color: white;
     font-weight: bold;
-    margin: 0;
-    display: inline; 
-    cursor: pointer;
-    
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+    padding: 5px 10px; 
 }
 
+.titilepage a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #f1f1f1;
+    text-decoration: none;
+}
 
 .nav-links {
     display: flex;
@@ -48,24 +53,32 @@ header {
     font-size: 1.2rem;
     padding: 5px 10px;
     border-radius: 5px; 
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
     background-color: rgba(171, 171, 171, 0.2); 
-    color: white;}
+    color: white;
+}
 
 .vertical a::before {
     content: '|';  
     margin-right: 10px; 
     color: rgb(84, 83, 83);
+    font-weight: normal; 
 }
 
 .vertical a {
-    color: rgb(84, 83, 83);hite;
+    color: rgb(84, 83, 83);
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
+
+.vertical a:hover {
+    color: white;
+}
+
 
 
 

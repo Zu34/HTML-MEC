@@ -751,26 +751,97 @@ body {
 }
 
 /* Link Card Specific */
-.link-wrap {
-  padding: 1rem;
-  font-size: 1rem;
+.card-thumb.link-wrap p {
+  padding: 0.5rem;
+  font-weight: bold;
   text-align: center;
-  background-color: #f0f0f0;
+  
 }
 
-.link-wrap p {
+.format-link .link-wrap {
+  display: table-cell;
   margin: 0;
-  font-weight: bold;
+  padding-left: 0;
+  vertical-align: middle;
+}
+
+.format-link .link-wrap p {
+  font-family: "librebaskerville-bold", serif;
+  color: #000000;
+  padding: 7.8rem 1rem 0 1rem;
+  margin-bottom: 2.3rem;
+  font-size: 1.4rem;
+  line-height: 1.625;
+}
+
+
+.masonry-card.format-link{
+  display: table-cell;
+  background: #FFFFFF;
+  vertical-align: middle;
+  width: 100%;
+  padding: 1.4rem 1.5rem 2.5rem; 
+  height: 405px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+ 
+}
+
+.format-link .card-thumb::before {
+  background-image: url(../images/icons/icon-link.svg);
+  width: 3.3rem;
+  content: "";
+    display: block;
+    height: 3.6rem;
+    width: 3.6rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .2;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
 }
 
 .link-wrap cite {
   font-size: 0.9rem;
+  margin-bottom: 4.4rem;
 }
 
+.slider__slides {
+  position: absolute;        /* Establishes a positioning context for absolute elements inside */
+  width: 100%;               /* Ensure the slider container spans the full width */
+  overflow: hidden;          /* Hide any overflow */
+}
 
+.dots {
+  position: absolute;
+  bottom: 390px;                /* Position dots 10px from the bottom */
+  left: 10px;                  /* Position dots 10px from the left */
+  display: flex;
+  gap: 5px;                    /* Space between dots */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
+}
 
+.dots li {
+  width: 10px;                  /* Small dot size */
+  height: 10px;
+  border-radius: 50%;          /* Make dots circular */
+  background-color: rgb(132, 129, 129);      /* Dot color */
+}
 
+.dots li.active, .dots li:first-child {
+  background-color: rgb(238, 236, 236);        /* Highlight active dot in black */
+}
 
 
 /* Quote Styling for Card #2 */
@@ -815,7 +886,7 @@ blockquote {
 
 }
 
-.card-quote blockquote, p {
+.card-quote blockquote p {
   font-family: "librebaskerville-bold", serif;
   padding: 0 0 0 0;
   margin-bottom: 0.3rem;
@@ -976,35 +1047,41 @@ blockquote {
 
 
 
-/* Columns for Articles */
 .column {
   flex: 1;
   flex-direction: column;
   gap: 60px; 
   min-width: 250px; 
+}
 
- 
-  
+.popular__posts .column{
+  margin: 0;
+  position: relative;
+  left:60px;
 
 }
+
+
+
+
+
 
 .text-column {
   float: right;
   flex: 0 0 25%; 
-
   gap: 30px;
   margin-bottom: 20px;
   position: relative;
-  /* top: -60px; */
-  /* left: -90px; */
+  top: -60px;
+  left: -90px;
   
 }
 
 .title-col{
  position: relative;
  text-align: start;
- top: -70px;
- right: -220px;
+ /*top: -110px;*/
+  right: -60px; 
  color: #000;
  font-size: 1.8rem;
   line-height: 1.375;
@@ -1043,7 +1120,7 @@ blockquote {
 .text-column p{
   font-family: sans-serif;
     font-size: 16px;
-     line-height: 1.9;
+    line-height: 1.9;
     margin-bottom: 30px ;
     color: #656565;
     font-weight: 300;
@@ -1057,7 +1134,7 @@ blockquote {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px; 
-  /* padding-left: 30px; */
+  padding-left: 30px;
   text-align: left;
   position: relative;
    margin-bottom: 25px;
@@ -1080,10 +1157,12 @@ blockquote {
   flex: 1;
   position: relative;
   top: -10px;
+  padding-right: 100px;
 }
-.popular__content a{
+.popular__content h5 a{
   color: #000000;
   font-size: 18px;
+  padding-right:140px;
 
 }
 .popular__content h5 :hover{
